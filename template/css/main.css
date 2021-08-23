@@ -1,3 +1,114 @@
 .main {
     grid-area: main;
 }
+
+.product-container {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1366px;
+    margin: 1.5rem auto 0 auto;
+    height: 100%;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+.product-thumbnails a {
+    text-decoration: none;
+    line-height: 0;
+}
+
+.product-thumbnails a img {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--black);
+    border-radius: 0.125rem;
+}
+
+.product-img {
+    max-width: 37rem;
+}
+
+.product-description {
+    color: var(--black);
+    max-width: 26rem;
+}
+
+.product-description h2 {
+    font: var(--headline1);
+    color: var(--black);
+}
+
+.product-description a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.product-description b {
+    color: var(--black);
+    font: var(--body1-bold);
+}
+
+.product-price {
+    color: var(--red);
+    font: var(--subtitle1);
+}
+
+/* Shopping Chart */
+.shopping-container {
+    border: 1px solid var(--grey);
+    border-radius: .25rem;
+    padding: .5rem;
+}
+
+.shopping-container a {
+    text-decoration: none;
+    color: var(--green);
+}
+.shopping-container b {
+    font: var(--body1-bold);
+}
+
+.shopping-shippingTime span {
+    color: var(--red);
+    font: var(--body1-bold);
+}
+
+.shopping-price {
+    color: var(--red);
+    font: var(--subtitle1);
+}
+
+.shopping-buyOptions button {
+    width: 100%;
+    border: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--grey);
+    padding: .5625rem 1rem .5625rem 2rem;
+    margin-bottom: .5rem;
+    border-radius: .25rem;
+    font: var(--button);
+    position: relative;
+}
+.shopping-buyOptions button:hover {
+    cursor: pointer;
+}
+
+.shopping-buyOptions button i {
+    color: var(--white);
+    background: var(--grey);
+    font-size: 1.5rem;
+    border-radius: .25rem;
+    position: absolute;
+    top: .25rem;
+    left: .5rem;
+}
+
+.shopping-buyOptions .btnChart {
+}
+.shopping-buyOptions .btnBuy {
+    background: var(--secondary);
+
+}
