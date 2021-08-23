@@ -1,0 +1,123 @@
+.header {
+    grid-area: header;
+    background-color: var(--blue-1);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto auto;
+    grid-template-areas: "logo location search sign-in orders chart";
+    grid-template-rows: auto;
+    gap: 2.5rem;
+}
+
+.header-logo {
+    grid-area: logo;
+}
+
+.global-location {
+    grid-area: location;
+}
+
+.sign-in {
+    grid-area: sign-in;
+}
+
+.orders {
+    grid-area: orders;
+}
+
+.chart {
+    grid-area: chart;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.header a span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utils */
+.nav-line1 {
+    font: var(--body2-regular);
+    line-height: .75rem;
+}
+
+.nav-line2 {
+    font: var(--body1-bold);
+}
+
+/* Location */
+
+.global-location a {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+}
+
+.global-location a .nav-icon {
+    align-self: flex-end;
+    font-size: 1.25rem;
+}
+
+.global-location a .nav-lines {
+    align-self: center;
+}
+
+/* Search */
+.nav-search {
+}
+.nav-search form {
+    display: flex;
+}
+
+.nav-searchScope {
+    background-color: #F3F3F3;
+    font: var(--body2-regular);
+    border: none;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    height: 2.5rem;
+    padding: .5rem 1.5rem .5rem 1rem;
+    color: var(--grey);
+    outline: none;
+    border-right: 1px solid gainsboro;
+}
+
+.nav-searchField {
+    font: var(--body1-regular);
+    color: var(--black);
+    border: none;
+    padding: .5rem 1rem .5rem 1rem;
+    flex: 1;
+}
+
+.nav-searchSubmit {
+    background-color: var(--secondary);
+    border: none;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    height: 2.5rem;
+    padding: .625rem .875rem;
+}
+
+.nav-searchSubmit i {
+    font-size: 1.25rem;
+}
+
+/* Sign In */
+.sign-in {
+    display: flex;
+}
+/* Orders */
+.orders {
+    display: flex;
+}
+/* Chart */
+.chart a i {
+    font-size: 3rem;
+}

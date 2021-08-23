@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav-main'
+        'main'
+        'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 2.5rem 1fr 25.5rem;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: center;
+}
