@@ -60,6 +60,15 @@
     font: var(--body1-bold);
 }
 
+/* Logo */
+.header-logo a {
+    margin: 0;
+    display: inline-block;
+    line-height: 0;
+}
+
+/*.header-logo img {}*/
+
 /* Location */
 
 .global-location a {
@@ -106,12 +115,16 @@
 }
 
 .nav-searchSubmit {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border: none;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
     height: 2.5rem;
     padding: .625rem .875rem;
+}
+.nav-searchSubmit:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
 }
 
 .nav-searchSubmit i {
@@ -127,8 +140,11 @@
     display: flex;
 }
 /* Chart */
+.chart a {
+    display: inline-block;
+}
 .chart a i {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
